@@ -11,12 +11,12 @@
         <a href="/src/form.html">Form</a>
         <nav><a href="/form">Form </a></nav> <br><br>
           <div class="box">
-            <form method="POST" action="http://localhost:3000/profile"> 
+        <form method="POST" action="http://localhost:3000/profile"> 
             <label for="fname"> First name:</label><br>
             <input type="text" id="fname" name="fname" value=""><br> 
             <label for="lname"> Last name: </label><br>
             <input type="text" id="lname" name="lname" value=""><br>
-            </form>
+         </form>
           </div>
           <p>    </p>
           <div class="radio">
@@ -33,7 +33,7 @@
         <div class="checkbox">
         How do you travel?<br><br>
 
-        <form action="/action_page.php">
+        <form method="POST" action="http://localhost:3000/profile">
           <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
           <label for="vehicle1"> Skateboard </label><br>
           <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -44,8 +44,9 @@
         </form> 
         <p></p>
       <br>
+      <div class="list">
         The following lists some of the computer brands you'd prefer
-        <form action="/action_page.php">
+        <form method="POST" action="http://localhost:3000/profile">
           <label for="cars">Choose a brand:</label>
           <select name="cars" id="cars">
             <option value="Lenovo">Lenovo</option>
@@ -55,8 +56,9 @@
           </select>
           <br><br>
           <input type="submit" value="Submit">
+        </div>
         </form>
-        
+      
         <p>Click the "Submit" button and the form-data will be sent to a page on the 
         server called "action_page.php".</p>
         
@@ -68,6 +70,6 @@
     <main>
     </main>
     <br>
-    <footer>Copyright 2021 &copy;</footer>
+    <footer><p>Copyright 2021 &copy;</p></footer>
   </body>
 </html>
