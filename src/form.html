@@ -4,13 +4,70 @@
   </head>
   <body>
     <header>
-      <nav>
-        <!-- works like <a href="/index.html">Home</a> -->
-        <a href="/">Home</a>
+      
+      <link rel="stylesheet" href="style.css">
+        <!-- Adding a link from a Home to a Form page> -->
+        <a href="/src/index.html">Home</a>
+        <a href="/src/form.html">Form</a>
+        <nav><a href="/form">Form </a></nav> <br><br>
+          <div class="box">
+            <form method="POST" action="http://localhost:3000/profile"> 
+            <label for="fname"> First name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br> 
+            <label for="lname"> Last name: </label><br>
+            <input type="text" id="lname" name="lname" value=""><br>
+            </form>
+          </div>
+          <p>    </p>
+          <div class="radio">
+          Whats your favourite Web language?<br><br>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css">CSS</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript">JavaScript</label><br><br>
+          </div>
+        </form>
+        <p>We still have checkboxes to tick...</p>
+        <div class="checkbox">
+        How do you travel?<br><br>
+
+        <form action="/action_page.php">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> Skateboard </label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2"> Tuk-Tuk </label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> Swimming </label><br><br>
+        </div>
+        </form> 
+        <p></p>
+      <br>
+        The following lists some of the computer brands you'd prefer
+        <form action="/action_page.php">
+          <label for="cars">Choose a brand:</label>
+          <select name="cars" id="cars">
+            <option value="Lenovo">Lenovo</option>
+            <option value="HP">HP</option>
+            <option value="Apple">Apple</option>
+            <option value="Samsung">Samsung</option>
+          </select>
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+        
+        <p>Click the "Submit" button and the form-data will be sent to a page on the 
+        server called "action_page.php".</p>
+        
+</body>
+</html>
+
       </nav>
     </header>
     <main>
     </main>
+    <br>
     <footer>Copyright 2021 &copy;</footer>
   </body>
 </html>
